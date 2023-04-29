@@ -14,7 +14,7 @@
         margin: 0;
         padding: 0;
       }
-      h1 {
+      #fuck-you {
         color: rgba(120, 120, 231, 0.863);
         font-size: 26px;
         font-weight: bold;
@@ -23,29 +23,54 @@
         text-align: center;
       }
 
-      form {
+      #false {
         text-align: center;
-        size: 14px;
+      }
+      
+      
+
+      .ele {
+        text-align: center;
       }
 
-      label {
-        font-size: 50px;
-        font-family: sans-serif;
-        color: red;
+
+      .fuck {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: transform 0.9s;
+      }
+
+      @keyframes spinfucker {
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+          
+        }
+
+      }
+
+      .fuck {
+        animation-name: spinfucker;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        
       }
 
       input {
         font-size: 10px;
         
-      }
+      } 
 
+    div {
+      text-align: center;
+    }      
 
-      select {
-        text-align: center;
-        size: 14px;
-        
-      }
-
+    
 
       img {
         display: block;
@@ -56,12 +81,14 @@
         margin: 20px 0;
         text-align: center;
       }
+
+
     </style>
   </head>
   <body>
 
 
-    <h1>Click the button (not a rick roll)</h1>
+    <h1 id="fuck-you">Click the button (not a rick roll)</h1>
 
     <img src="https://w7.pngwing.com/pngs/702/302/png-transparent-red-button-push-button-red-button-miscellaneous-3d-computer-graphics-web-button-thumbnail.png">
 
@@ -72,20 +99,23 @@
     </p> 
     
     
-    <a href='https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUJcmljayByb2xs'>
-      <h1> <button> click me </button> </h1>
+    <a class="ele" href='https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUJcmljayByb2xs'>
+      <div>
+      <button class="butt"> click me </button>
+      </div>
     </a>
 
 
-  
 
-      <form>
+    <h2 class="fuck" class="you" class="spinfucker"> say it</h2>
 
-        <label id="say it"> say it </label>
+      <form class="ele">
+
+   
 
         <br>
 
-        <select for="say it">
+        <select class="sayIt">
 
           <option> fuck you </option>
           <option> dont fuck you </option>
@@ -97,7 +127,7 @@
 
       </form>
 
-  
+ 
 
   </body>
 </html>
